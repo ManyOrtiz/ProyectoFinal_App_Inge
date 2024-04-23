@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colegios Residenciales</title>
+  <style>
+    /* Encabezado */
+    header {
+      background-color: #FF7100;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    /* Sección de eventos */
+    .eventos {
+      padding: 20px;
+    }
+
+    .evento {
+      background-color: white;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+
+    .evento h3 {
+      color: #FF7100;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .evento p {
+      color: #000000;
+      margin-top: 5px;
+    }
+
+    .evento button {
+      background-color: #FF7100;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Options Section Styles */
+    .options {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .option-button {
+      background-color: #FF7100;
+      color: white;
+      text-align: center;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 10px;
+      font-size: 16px;
+    }
+
+    /* Pie de página */
+    footer {
+      background-color: #FF7100;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Colegios Residenciales</h1>
+    <p>Bienvenido, Pedro.</p>
+  </header>
+  <main>
+    <section class="eventos">
+      <h2>Eventos</h2>
+      <div class="evento">
+        <h3>Torneo Recreativo Volleyball</h3>
+        <p>Miércoles 5 de marzo</p>
+        <p>Registrate con tu moderador@</p>
+        <button>Más información</button>
+      </div>
+      <div class="evento">
+        <h3>Reunión</h3>
+        <p>21 de febrero</p>
+        <p>Se le invita todos los residentes a asistir a la reunión donde se brindará información sobre las nuevas reglas de las instalaciones en la sala de reunión 3B.</p>
+        <button>Más información</button>
+      </div>
+      <div class="evento">
+        <h3>Cambio de chapas</h3>
+        <p>23 de febrero</p>
+        <p>Informamos a todos los residentes que tendremos un cambio de chapa a todas las suites, por lo cual es necesario pasar por su nueva tarjeta.</p>
+        <button>Más información</button>
+      </div>
+    </section>
+    <section class="options">
+      <button class="option-button"onclick="window.location.href='#reportar-problema'">Ayuda y quejas</button>
+      <button class="option-button">Comunidad</button>
+      <button class="option-button">Inicio</button>
+      <button class="option-button">Visitas</button>
+      <button class="option-button">Chats</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Colegios Residenciales</p>
+  </footer>
+  
+
+</body>
+</html>
+
+<section id="reportar-problema" class="report-form">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegios Residenciales - Reportar Problema</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Colegios Residenciales</h1>
+    </header>
+    <main>
+      <section class="report-form">
+        <h2 class="form-title">Reportar Problema</h2>
+        <form>
+          <div class="form-group">
+            <label for="problem-type">Tipo de problema:</label>
+            <select id="problem-type" name="problem-type" required>
+              <option value="">Seleccione una opción</option>
+              <option value="noise">Ruido</option>
+              <option value="hygiene">Mala higiene en áreas comunes</option>
+              <option value="aggression">Agresiones</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="description">Descripción del problema:</label>
+            <textarea id="description" name="description" rows="5" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="date">Fecha del problema:</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label for="time">Hora del problema:</label>
+            <input type="time" id="time" name="time" required>
+          </div>
+          <div class="form-group">
+            <label for="location">Ubicación del problema:</label>
+            <input type="text" id="location" name="location" required>
+          </div>
+          <div class="form-group">
+            <label for="evidence">Evidencia (opcional):</label>
+            <input type="file" id="evidence" name="evidence">
+          </div>
+          <button type="submit">Enviar reporte</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Colegios Residenciales</p>
+    </footer>
+  </body>
+    </section>
+
+
+
+  
+
+
+

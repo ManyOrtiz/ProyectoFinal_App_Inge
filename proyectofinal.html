@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colegios Residenciales</title>
+  <style>
+    /* Encabezado */
+    header {
+      background-color: #FF7100;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    /* Sección de eventos */
+    .eventos {
+      padding: 20px;
+    }
+
+    .evento {
+      background-color: white;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+
+    .evento h3 {
+      color: #FF7100;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .evento p {
+      color: #000000;
+      margin-top: 5px;
+    }
+
+    .evento button {
+      background-color: #FF7100;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Pie de página */
+    footer {
+      background-color: #FF7100;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Colegios Residenciales</h1>
+    <p>Bienvenido, Pedro.</p>
+  </header>
+  <main>
+    <section class="eventos">
+      <h2>Eventos</h2>
+      <div class="evento">
+        <h3>Torneo Recreativo Volleyball</h3>
+        <p>Miércoles 5 de marzo</p>
+        <p>Registrate con tu moderador@</p>
+        <button>Más información</button>
+      </div>
+      <div class="evento">
+        <h3>Reunión</h3>
+        <p>21 de febrero</p>
+        <p>Se le invita todos los residentes a asistir a la reunión donde se brindará información sobre las nuevas reglas de las instalaciones en la sala de reunión 3B.</p>
+        <button>Más información</button>
+      </div>
+      <div class="evento">
+        <h3>Cambio de chapas</h3>
+        <p>23 de febrero</p>
+        <p>Informamos a todos los residentes que tendremos un cambio de chapa a todas las suites, por lo cual es necesario pasar por su nueva tarjeta.</p>
+        <button>Más información</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Colegios Residenciales</p>
+  </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colegios Residenciales</title>
+  <style>
+    /* Header Styles */
+    header {
+      background-color: #FF7100;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    .welcome {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    /* Notice Section Styles */
+    .notice-section {
+      background-color: #008000;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .notice-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .notice-content {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    /* Options Section Styles */
+    .options {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .option-button {
+      background-color: #FF7100;
+      color: white;
+      text-align: center;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 10px;
+      font-size: 16px;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #FF7100;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Colegios Residenciales</h1>
+    <p class="welcome">Bienvenido, Pedro.</p>
+  </header>
+  <main>
+    <section class="notice-section">
+      <h2 class="notice-title">Noticia: Ingresos</h2>
+      <p class="notice-content">20 febrero</p>
+    </section>
+    <section class="options">
+      <button class="option-button">Ayuda y quejas</button>
+      <button class="option-button">Calendario de Limpieza</button>
+      <button class="option-button">Quiero levantar un reporte</button>
+      <button class="option-button">Otra opción</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Colegios Residenciales</p>
+  </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colegios Residenciales - Reportar Problema</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Colegios Residenciales</h1>
+  </header>
+  <main>
+    <section class="report-form">
+      <h2 class="form-title">Reportar Problema</h2>
+      <form>
+        <div class="form-group">
+          <label for="problem-type">Tipo de problema:</label>
+          <select id="problem-type" name="problem-type" required>
+            <option value="">Seleccione una opción</option>
+            <option value="noise">Ruido</option>
+            <option value="hygiene">Mala higiene en áreas comunes</option>
+            <option value="aggression">Agresiones</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="description">Descripción del problema:</label>
+          <textarea id="description" name="description" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="date">Fecha del problema:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Hora del problema:</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+          <label for="location">Ubicación del problema:</label>
+          <input type="text" id="location" name="location" required>
+        </div>
+        <div class="form-group">
+          <label for="evidence">Evidencia (opcional):</label>
+          <input type="file" id="evidence" name="evidence">
+        </div>
+        <button type="submit">Enviar reporte</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Colegios Residenciales</p>
+  </footer>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colegios Residenciales - Ranking</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #303f9f;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    /* Ranking Section Styles */
+    .ranking {
+      background-color: white;
+      padding: 40px;
+      border-radius: 8px;
+      margin: 40px auto;
+      width: 600px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .ranking h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .ranking table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .ranking th,
+    .ranking td {
+      text-align: left;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .ranking th {
+      font-weight: bold;
+      background-color: #f2f2f2;
+    }
+
+    .ranking tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Colegios Residenciales</h1>
+  </header>
+  <main>
+    <section class="ranking">
+      <h2>Ranking en:</h2>
+      <p>Suite más ordenada - Mejor residente - Mejor suite</p>
+      <table>
+        <tr>
+          <th>Suite</th>
+          <th>Calificación</th>
+        </tr>
+        <tr>
+          <td>L-300</td>
+          <td>97</td>
+        </tr>
+        <tr>
+          <td>F-200</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>H-400</td>
+          <td>87</td>
+        </tr>
+        <tr>
+          <td>B-100</td>
+          <td>87</td>
+        </tr>
+        <tr>
+          <td>H-200</td>
+          <td>87</td>
+        </tr>
+        <tr>
+          <td>E-100</td>
+          <td>83</td>
+        </tr>
+        <tr>
+          <td>C-400</td>
+          <td>81</td>
+        </tr>
+      </table>
+      <p>Reinicio del ranking una vez al mes. A las personas que estén en el podio se les darán premios relacionados a colegios.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Colegios Residenciales</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colegios Residenciales - Acceso</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #303f9f;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      display: flex; /* Use flexbox for layout */
+      align-items: center; /* Align items vertically */
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin-right: 20px; /* Add space between h1 and image */
+    }
+
+    header img {
+      width: 80px; /* Adjust image size as needed */
+      height: auto;
+      margin-left: 20px; /* Add space between image and h1 */
+    }
+
+    /* Content Section Styles */
+    .content {
+      background-color: white;
+      padding: 40px;
+      border-radius: 8px;
+      margin: 40px auto;
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .content h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .content button {
+      background-color: #303f9f;
+      color: white;
+      border: none;
+      padding: 15px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .content button:hover {
+      background-color: #242f73; /* Darker shade on hover */
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Colegios Residenciales</h1>
+    <img src="https://https://www.pinterest.com/pin/199847302205151213/">
+  </header>
+  <main>
+    <section class="content">
+      <h2>Acceso</h2>
+      <div class="buttons">
+        <button>Entrada Visitantes</button>
+        <button>Salida Visitantes</button>
+        <button>Entrada Residentes (Horario Nocturno) </button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Colegios Residenciales</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada de residentes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+        select {
+            appearance: none; /* Ocultar el selector nativo de opciones */
+            background-image: url('dropdown-arrow.png'); /* Imagen de flecha desplegable */
+            background-repeat: no-repeat;
+            background-position-x: right 10px;
+            background-size: 16px 16px;
+            padding-right: 30px;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px; /* Separar el botón de hora de llegada */
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Entrada de residentes</h1>
+        <form action="#">
+            <div class="row">
+                <label for="nombre">Nombre y apellidos:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="row">
+                <label for="id">ID:</label>
+                <input type="number" id="id" name="id" required>
+            </div>
+            <div class="row">
+                <label for="suite">Suite:</label>
+                <input type="text" id="suite" name="suite">
+            </div>
+            <div class="row">
+                <label for="habitacion">Habitación:</label>
+                <input type="text" id="habitacion" name="habitacion">
+            </div>
+            <div class="row">
+                <label for="colegio">Colegio:</label>
+                <select id="colegio" name="colegio" required>
+                    <option value="">Seleccione un colegio</option>
+                    <option value="jose_gaos">José Gaos</option>
+                    <option value="ignacio_bernal">Ignacio Bernal</option>
+                    <option value="ray_lindley">Ray Lindley</option>
+                    <option value="cain_murray">Cain Murray</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="hora_llegada">Hora de llegada:</label>
+                <input type="time" id="hora_llegada" name="hora_llegada" required>
+            </div>
+            <div class="row">
+                <button type="submit">Generar entrada</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colegios Residenciales - Acceso Visitantes</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #303f9f;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Content Section Styles */
+    .content {
+      background-color: white;
+      padding: 40px;
+      border-radius: 8px;
+      margin: 40px auto;
+      max-width: 600px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .content h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    /* Barcode Scanner Styles */
+    .barcode-scanner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .scanner-container {
+      width: 300px;
+      height: 300px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .scanner-container video {
+      width: 50%;
+      height: 50%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    .scanner-container canvas {
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    .scan-instructions {
+      text-align: center;
+    }
+
+    .scan-instructions p {
+      margin-bottom: 10px;
+    }
+
+    .scan-instructions button {
+      background-color: #303f9f;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Colegios Residenciales</h1>
+      <p>Acceso Visitantes</p>
+    </div>
+  </header>
+  <main>
+    <section class="content">
+      <h2>Ingreso</h2>
+      <p>Los visitantes deben registrarse en la recepción y mostrar su identificación antes de ingresar a las instalaciones. </p>
+      <div class="barcode-scanner">
+        <div class="scanner-container">
+          <video id="video" autoplay></video>
+          <canvas id="canvas"></canvas>
+        </div>
+        <div class="scan-instructions">
+          <p>Escanee su código de barras de visitante para registrar su ingreso.</p>
+          <button id="scan-button">Escanear</button>
+        </div>
+      </div>
+    </section>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Generador de código QR</title>
+      <style>
+        body {
+          font-family: sans-serif;
+          background-color: #f0f0f0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+        }
+
+        .container {
+          width: 600px;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+          color: #333;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        .qr-container {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 20px;
+        }
+
+        #qrcode {
+          width: 250px;
+          height: 250px;
+          border: 1px solid #ccc;
+        }
+
+        .input-group {
+          display: flex;
+          width: 100%;
+          margin-bottom: 20px;
+          display: none; /* He quitado la visualización del grupo de entrada */
+        }
+
+        #url {
+          flex: 1;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 16px;
+        }
+
+        #generate {
+          padding: 10px 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          cursor: pointer;
+          background-color: #007bff;
+          color: #fff;
+          font-size: 16px;
+          transition: background-color 0.3s;
+        }
+
+        #generate:hover {
+          background-color: #0056b3;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Genera tu código QR</h1>
+
+        <div class="qr-container">
+          <div id="qrcode"></div>
+        </div>
+
+        <button id="generate">Generar</button>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/qrcode@1.2.0/qrcode.min.js"></script>
+      <script>
+        const qrcode = new QRCode('qrcode');
+
+        const generateBtn = document.getElementById('generate');
+
+        generateBtn.addEventListener('click', () => {
+          qrcode.makeCode('https://www.google.com/'); /* URL de ejemplo */
+        });
+      </script>
+    </body>
+    </html>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bienvenido</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-image: url("imagen-fondo.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100vh;
+            }
+
+            .container {
+                width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .header {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .login-form {
+                padding: 20px;
+            }
+
+            .login-form label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .login-form input[type="text"],
+            .login-form input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+
+            .login-form button {
+                background-color: #007bff;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                display: inline-block; /* Convertir botones en bloques en línea */
+                margin: 10px 10px 0 0; /* Ajustar márgenes con más precisión */
+            }
+
+            .login-form button:hover {
+                background-color: #0056b3;
+            }
+
+            .social-login {
+                margin-top: 20px;
+            }
+
+            .social-login a {
+                display: block;
+                margin-bottom: 10px;
+                padding: 10px 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                text-decoration: none;
+                color: #000;
+            }
+
+            .social-login a.g-sign-in {
+                background-color: #4285f4;
+                color: #fff;
+            }
+
+            .social-login a.apple-sign-in {
+                background-color: #000;
+                color: #fff;
+            }
+
+            .login-form p {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .login-form p a {
+                color: #007bff;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Bienvenido</h1>
+            </div>
+            <div class="login-form">
+                <form action="#">
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit">Iniciar sesión</button>
+                    <button type="submit">Registrarse</button>
+                </form>
+                <div class="social-login">
+                    <a href="#" class="g-sign-in">Iniciar sesión con Google</a>
+                    <a href="#" class="apple-sign-in">Continuar con Apple</a>
+
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat grupal</title>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+            }
+
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+                margin: 0;
+            }
+
+            .messages {
+                height: 300px;
+                overflow-y: scroll;
+            }
+
+            .message {
+                display: flex;
+                margin-bottom: 10px;
+                padding: 10px;
+                background-color: #f0f0f0;
+                border-radius: 5px;
+            }
+
+            .sender {
+                font-weight: bold;
+            }
+
+            .time {
+                font-size: 12px;
+                margin-left: 10px;
+                color: #999;
+            }
+
+            .content {
+                margin-left: 20px;
+            }
+
+            .input-bar {
+                display: flex;
+            }
+
+            .input-bar input[type="text"] {
+                flex: 1;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px 0 0 5px;
+            }
+
+            .input-bar button {
+                padding: 10px;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 0 5px 5px 0;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>CHAT GRUPAL</h1>
+                <input type="text" placeholder="Buscar...">
+            </div>
+            <div class="messages">
+                <div class="message">
+                    <div class="sender">Administración Colegio</div>
+                    <div class="time">11:47 am</div>
+                    <div class="content">¡Hola a todos! ¿Cómo están hoy?</div>
+                </div>
+                <div class="message">
+                    <div class="sender">Tú</div>
+                    <div class="time">11:47 am</div>
+                    <div class="content">¡Hola! Muy bien, ¿y ustedes?</div>
+                </div>
+                <div class="message">
+                    <div class="sender">Suite L-300</div>
+                    <div class="time">11:47 am</div>
+                    <div class="content">¡Aquí todo perfecto!</div>
+                </div>
+                <div class="message">
+                    <div class="sender">Edificio L</div>
+                    <div class="time">11:47 am</div>
+                    <div class="content">¡Igualmente!</div>
+                </div>
+                <div class="message">
+                    <div class="sender">Tú</div>
+                    <div class="time">11:47 am</div>
+                    <div class="content">¡Genial! ¿Hay algo que podamos hacer por ustedes?</div>
+                </div>
+                <div class="message">
+                    <div class="sender">Administración Colegio</div>
+                    <div class="time">11:48 am</div>
+                    <div class="content">En realidad, sí. Necesitamos que nos ayuden a difundir un mensaje importante a todos los residentes.</div>
+                </div>
+                <div class="message">
+                    <div class="sender">Tú</div>
+                    <div class="time">11:48 am</div>
+                    <div class="content">¡Claro, digan! ¿De qué se trata?</div>
+
+
+                  <!DOCTYPE html>
+                  <html lang="es">
+                  <head>
+                      <meta charset="UTF-8">
+                      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                      <title>Mensaje de texto</title>
+                      <style>
+                          body {
+                              font-family: sans-serif;
+                              background-color: #f4f4f4;
+                              color: #333;
+                          }
+
+                          .container {
+                              width: 400px; /* Ajustar el ancho del contenedor */
+                              margin: 40px auto;
+                              padding: 20px;
+                              border-radius: 10px;
+                              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                          }
+
+                          .header {
+                              background-color: #4CAF50;
+                              color: white;
+                              padding: 10px;
+                              border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */
+                          }
+
+                          .header h2 {
+                              margin: 0;
+                              text-align: center;
+                          }
+
+                          .message-container {
+                              padding: 20px;
+                              border: 1px solid #ccc;
+                              border-radius: 0 0 10px 10px; /* Bordes redondeados en la parte inferior */
+                          }
+
+                          .message {
+                              font-size: 16px;
+                              line-height: 1.6;
+                              margin-bottom: 15px;
+                          }
+
+                          .message-info {
+                              font-size: 12px;
+                              color: #666;
+                          }
+
+                          .input-container {
+                              display: flex;
+                              justify-content: space-between;
+                              align-items: center;
+                              margin-top: 15px;
+                          }
+
+                          .input-container input {
+                              flex: 1; /* Ocupar todo el ancho disponible */
+                              padding: 10px;
+                              border: 1px solid #ccc;
+                              border-radius: 5px;
+                          }
+
+                          .input-container button {
+                              background-color: #4CAF50;
+                              color: white;
+                              padding: 10px 20px;
+                              border: none;
+                              border-radius: 5px;
+                              cursor: pointer;
+                          }
+
+                          .input-container button:hover {
+                              background-color: #45a049;
+                          }
+                      </style>
+                  </head>
+                  <body>
+                      <div class="container">
+                          <div class="header">
+                              <h2>Mensaje de texto</h2>
+                          </div>
+
+                          <div class="message-container">
+                              <div class="message">
+                                  Manuel te amo 
+                              </div>
+
+                              <div class="message-info">
+                                  Enviado por: Chucho 
+                                  <br>
+                                  Fecha y hora: 2024-04-18 14:37
+                              </div>
+                          </div>
+
+                          <div class="input-container">
+                              <input type="text" placeholder="Escribe tu respuesta">
+                              <button type="submit">Enviar</button>
+                          </div>
+                      </div>
+                  </body>
+                  </html>
+
