@@ -1,0 +1,573 @@
+
+<!-- Avance del dia 25/04/2024 -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colegios Residenciales</title>
+  <style>
+    /* Encabezado */
+    header {
+      background-color: #FF7100;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    /* Sección de eventos */
+    .eventos {
+      padding: 20px;
+    }
+
+    .evento {
+      background-color: white;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+
+    .evento h3 {
+      color: #FF7100;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .evento p {
+      color: #000000;
+      margin-top: 5px;
+    }
+
+    .evento button {
+      background-color: #FF7100;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Options Section Styles */
+    .options {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .option-button {
+      background-color: #FF7100;
+      color: white;
+      text-align: center;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 10px;
+      font-size: 16px;
+    }
+    im
+    /* Pie de página */
+    footer {
+      background-color: #FF7100;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Colegios Residenciales</h1>
+    <p>Bienvenido, Pedro.</p>
+  </header>
+  <main>
+    <section class="eventos">
+      <h2>Eventos</h2>
+      <div class="evento">
+        <h3>Torneo Recreativo Volleyball</h3>
+        <p>Miércoles 5 de marzo</p>
+        <p>Registrate con tu moderador@</p>
+        <button>Más información</button>
+      </div>
+      <div class="evento">
+        <h3>Reunión</h3>
+        <p>21 de febrero</p>
+        <p>Se le invita todos los residentes a asistir a la reunión donde se brindará información sobre las nuevas reglas de las instalaciones en la sala de reunión 3B.</p>
+        <button>Más información</button>
+      </div>
+      <div class="evento">
+        <h3>Cambio de chapas</h3>
+        <p>23 de febrero</p>
+        <p>Informamos a todos los residentes que tendremos un cambio de chapa a todas las suites, por lo cual es necesario pasar por su nueva tarjeta.</p>
+        <button>Más información</button>
+      </div>
+    </section>
+    <section class="options">
+      <button class="option-button"onclick="window.location.href='#reportar-problema'">Ayuda y quejas</button>
+      <button class="option-button"onclick ="window.location.href='#ranking-comunidad'"> Comunidad </button>
+      
+      <button class="option-button"onclick ="window.location.href='#visitas'"> Visitas </button>
+      <button class="option-button"onclick ="window.location.href='#chats'"> Chats </button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Colegios Residenciales</p>
+  </footer>
+  
+
+</body>
+</html>
+</section>
+
+<section id="reportar-problema" class="report-form">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegios Residenciales - Reportar Problema</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Colegios Residenciales</h1>
+    </header>
+    <main>
+      <section class="report-form">
+        <h2 class="form-title">Reportar Problema</h2>
+        <form>
+          <div class="form-group">
+            <label for="problem-type">Tipo de problema:</label>
+            <select id="problem-type" name="problem-type" required>
+              <option value="">Seleccione una opción</option>
+              <option value="noise">Ruido</option>
+              <option value="hygiene">Mala higiene en áreas comunes</option>
+              <option value="aggression">Agresiones</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="description">Descripción del problema:</label>
+            <textarea id="description" name="description" rows="5" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="date">Fecha del problema:</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label for="time">Hora del problema:</label>
+            <input type="time" id="time" name="time" required>
+          </div>
+          <div class="form-group">
+            <label for="location">Ubicación del problema:</label>
+            <input type="text" id="location" name="location" required>
+          </div>
+          <div class="form-group">
+            <label for="evidence">Evidencia (opcional):</label>
+            <input type="file" id="evidence" name="evidence">
+          </div>
+          <button type="submit">Enviar reporte</button>
+        </form>
+      </section>
+      <section class="options">
+        
+        <button class="option-button"onclick ="window.location.href='#ranking-comunidad'"> Comunidad </button>
+        <button class="option-button"onclick ="window.location.href='#inicio'"> Inicio </button>
+        <button class="option-button"onclick ="window.location.href='#visitas'"> Visitas </button>
+        <button class="option-button"onclick ="window.location.href='#chats'"> Chats </button>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Colegios Residenciales</p>
+    </footer>
+  </body>
+    </section>
+
+
+
+<section id="ranking-comunidad" class="report-form">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colegios Residenciales - Ranking</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+
+    /* Ranking Section Styles */
+    .ranking {
+      background-color: white;
+      padding: 40px;
+      border-radius: 8px;
+      margin: 40px auto;
+      width: 600px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .ranking h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .ranking table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .ranking th,
+    .ranking td {
+      text-align: left;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .ranking th {
+      font-weight: bold;
+      background-color: #f2f2f2;
+    }
+
+    .ranking tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Colegios Residenciales</h1>
+  </header>
+  <main>
+    <section class="ranking">
+      <h2>Ranking en:</h2>
+      <p>Suite más ordenada - Mejor residente - Mejor suite</p>
+      <table>
+        <tr>
+          <th>Suite</th>
+          <th>Calificación</th>
+        </tr>
+        <tr>
+          <td>L-300</td>
+          <td>97</td>
+        </tr>
+        <tr>
+          <td>F-200</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>H-400</td>
+          <td>87</td>
+        </tr>
+        <tr>
+          <td>B-100</td>
+          <td>87</td>
+        </tr>
+        <tr>
+          <td>H-200</td>
+          <td>87</td>
+        </tr>
+        <tr>
+          <td>E-100</td>
+          <td>83</td>
+        </tr>
+        <tr>
+          <td>C-400</td>
+          <td>81</td>
+        </tr>
+      </table>
+      <p>Reinicio del ranking una vez al mes. A las personas que estén en el podio se les darán premios relacionados a colegios.</p>
+    </section>
+  </main>
+  <section class="options">
+    <button class="option-button"onclick="window.location.href='#reportar-problema'">Ayuda y quejas</button>
+    
+    <button class="option-button"onclick ="window.location.href='#inicio'"> Inicio </button>
+    <button class="option-button"onclick ="window.location.href='#visitas'"> Visitas </button>
+    <button class="option-button"onclick ="window.location.href='#chats'"> Chats </button>
+  </section>
+  <footer>
+    <p>&copy; 2024 Colegios Residenciales</p>
+  </footer>
+</body>
+</html>
+</section>
+
+
+<section id="visitas" class="visitas">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colegios Residenciales - Acceso</title>
+  <style>
+
+
+
+    header img {
+      width: 90px; /* Adjust image size as needed */
+      height: auto;
+      margin-left: 20px; /* Add space between image and h1 */
+    }
+
+    /* Content Section Styles */
+    .content {
+      background-color: white;
+      padding: 40px;
+      border-radius: 8px;
+      margin: 40px auto;
+      width: 750px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .content h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .content button {
+      background-color: #FF7100;
+      color: white;
+      border: none;
+      padding: 15px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .content button:hover {
+      background-color: #242f73; /* Darker shade on hover */
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Colegios Residenciales</h1>
+    
+  </header>
+  <main>
+    <section class="content">
+      <h2>Acceso</h2>
+      <div class="buttons">
+        <button>Entrada Visitantes</button>
+        <button>Salida Visitantes</button>
+        <button>Entrada Residentes (Horario Nocturno) </button>
+      </div>
+    </section>
+  </main>
+
+
+  
+
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de código QR</title>
+    <style>
+    
+      body {
+        
+        font-family: sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        width: 600px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+
+
+      .qr-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      #qrcode {
+        width: 250px;
+        height: 250px;
+        border: 1px solid #ccc;
+      }
+
+      .input-group {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+        display: none; /* He quitado la visualización del grupo de entrada */
+      }
+
+      #generate {
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
+
+      #generate:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Genera tu código QR</h1>
+
+      <div class="qr-container">
+        <div id="qrcode">
+          <img src="QR.jpg"/>
+        </div>
+        
+      </div>
+
+      <button id="generate">Generar</button>
+    </div>
+
+  </body>
+  </html>
+
+
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Entrada de residentes</title>
+      <style>
+
+
+          .container {
+              width: 600px;
+              margin: 40px auto;
+              padding: 30px;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          }
+
+          h1 {
+              text-align: center;
+              margin-bottom: 20px;
+              color: #4CAF50;
+          }
+
+          label {
+              display: block;
+              margin-bottom: 5px;
+              font-weight: bold;
+          }
+
+          input,
+          select {
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              box-sizing: border-box;
+          }
+
+          input:focus {
+              outline: none;
+              border-color: #4CAF50;
+          }
+
+          select {
+              appearance: none; /* Ocultar el selector nativo de opciones */
+              background-image: url('dropdown-arrow.png'); /* Imagen de flecha desplegable */
+              background-repeat: no-repeat;
+              background-position-x: right 10px;
+              background-size: 16px 16px;
+              padding-right: 30px;
+              cursor: pointer;
+          }
+
+          button {
+              background-color: #4CAF50;
+              color: white;
+              padding: 15px 20px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              margin-top: 20px; /* Separar el botón de hora de llegada */
+          }
+
+          button:hover {
+              background-color: #45a049;
+          }
+      </style>
+  </head>
+  <body>
+      <div class="container">
+          <h1>Entrada de residentes</h1>
+          <form action="#">
+              <div class="row">
+                  <label for="nombre">Nombre completo:</label>
+                  <input type="text" id="nombre" name="nombre" required>
+              </div>
+              <div class="row">
+                  <label for="id">ID:</label>
+                  <input type="number" id="id" name="id" required>
+              </div>
+              <div class="row">
+                  <label for="suite">Suite:</label>
+                  <input type="text" id="suite" name="suite">
+              </div>
+              <div class="row">
+                  <label for="colegio">Colegio:</label>
+                  <select id="colegio" name="colegio" required>
+                      <option value="">Seleccione un colegio</option>
+                      <option value="jose_gaos">José Gaos</option>
+                      <option value="ignacio_bernal">Ignacio Bernal</option>
+                      <option value="ray_lindley">Ray Lindley</option>
+                      <option value="cain_murray">Cain Murray</option>
+                  </select>
+              </div>
+              <div class="row">
+                  <label for="hora_llegada">Hora de llegada:</label>
+                  <input type="time" id="hora_llegada" name="hora_llegada" required>
+              </div>
+              <div class="row">
+                  <button type="submit">Generar entrada</button>
+              </div>
+          </form>
+      </div>
+  </body>
+  </html>
